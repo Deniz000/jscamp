@@ -39,8 +39,8 @@ product2.productName = "Karpuz"
 console.log(product3.productName)
 
 function addToCart4(x) {
-    console.log(products) // products tanımlanmadığı için bi st scops'da
-    //bir üst scop da aşağıdaki let ile başlayan 
+    console.log(products) // products tanımlanmadığı için bi st scopes'da
+    //bir üst scope da aşağıdaki let ile başlayan 
 }
 // ürünler listesi gelir bize 
 let products = [
@@ -55,7 +55,7 @@ addToCart4(products)
     //     console.log(num1 + num2)
     // }
 
-    function add2(...numbers) { // rest OPERATÖRÜ deniliyor, ikinci prmetre alacaksa sona rest yazılır!
+    function add2(...numbers) { // rest OPERATÖRÜ deniliyor, ikinci prmetre alacaksa rest sona yazılır!
         let total = 0
         for (let i = 0; i < numbers.length; i++) {
             total += numbers[i]
@@ -69,7 +69,7 @@ addToCart4(products)
      let numbers2 = [20,14,43,57,86]
      console.log(Math.max(...numbers2))
      
-     let [icAnadolu, marmara, karadeniz, [icAnadoluSehirleri]] = [
+     let [icAnadolu, marmara, karadeniz, [icAnadoluSehirleri, marmaraSehirleri]] = [
         {name: "İç Anadolu", populationn: "20M"},
         {name: "marmara", populationn: "30M"},
         {name: "karadeniz", populationn: "10M"},
@@ -82,7 +82,7 @@ addToCart4(products)
  
      console.log(icAnadolu.name)
      console.log(marmara.populationn)
-     console.log(icAnadoluSehirleri)
+     console.log(marmaraSehirleri)
 
      let newProductName,newUitPrice, newQuantity // üç değişken tanımladım
      //aşağıda da nesne var 
