@@ -28,6 +28,7 @@ let quantityOver2 = cart.filter(product=> product.quantity > 2)
  console.log(quantityOver2)
 
 
+ //1.47
 
 
 
